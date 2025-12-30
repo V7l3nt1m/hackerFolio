@@ -38,9 +38,7 @@
         <img class="avatar" src="images/me.jpg" alt="Profile photo" />
         <div class="about-text">
           <h2>Valentim Loth Simão Prado</h2>
-          <p>I am a security researcher and bug bounty hunter with strong skills in Linux, networking, 
-            and web application security. Over the past years, I have reported multiple vulnerabilities to well-known companies through 
-            responsible disclosure and bug bounty programs. My expertise includes vulnerability discovery, exploitation, and remediation across different environments</p>
+          <p>Pentester and Security Researcher focused on web applications, APIs, and Application Security, with hands-on experience in identifying and responsibly reporting vulnerabilities, including collaboration with the U.S. Department of Defense.</p>
         </div>
       </div>
     </section>
@@ -74,8 +72,8 @@
           <h3>Python</h3>
         </div>
         <div class="skill-card">
-        <i class="fa-brands fa-c"></i>
-           <h3>C</h3>
+          <i class="fa-solid fa-database"></i>
+           <h3>SQL</h3>
         </div>
         <div class="skill-card">
         <i class="fa-brands fa-php"></i>
@@ -116,24 +114,26 @@
 
     <!-- Companies -->
     <section id="companies" class="section">
-      <h1 class="section-title">COMPANIES REPORTED TO</h1>
+      <h1 class="section-title">SECURITY REPORTS SUBMITTED TO</h1>
       <div class="grid logos">
-        <img src="images/Automattic_logo.svg.png" alt="Automattic" />
-        <img src="images/DIB-VDP-Badge-Modified.png" alt="dc3" />
-        <img src="images/Pepsi-Logo.png" alt="pepsico" />
-        <img src="images/THG-Logo.png" alt="the hut group">
+        <img src="images/anywherelogo.png" alt="Anywhere Real State" title="Anywhere Real State"/>
+        <img src="images/Automattic_logo.svg.png" alt="Automattic" title="Automattic" />
+        <img src="images/DIB-VDP-Badge-Modified.png" alt="DC3 - Dept of Defense Cybercrime center" title="DC3 - Dept of Defense Cybercrime center" />
+        <img src="images/Pepsi-Logo.png" alt="Pepsico" title="Pepsico"/>
+        <img src="images/THG-Logo.png" alt="the hut group" title="The Hut Group">
+        <img src="images/CBRE_Group-Logo.wine.png" alt="CBRE" title="CBRE">
       </div>
     </section>
 
     <!-- Vulnerabilities Count -->
     <section id="vulns" class="section stats">
-      <h1 class="section-title">TOTAL VULNERABILITIES REPORTS</h1>
+      <h1 class="section-title">TOTAL REPORTS SUBMITTED</h1>
       <div class="stat-card">
         <div class="stat">
           <span id="vulnCount" class="count">0</span>
           <span class="unit">findings</span>
         </div>
-        <p class="note">responsible disclosure across multiple programs</p>
+        <p class="note">Responsible Disclosure Across Multiple programs</p>
       </div>
     </section>
 
@@ -142,14 +142,16 @@
       <h1 class="section-title">ACHIEVEMENTS</h1>
             <div class="grid skills-grid">
       <div class="skill-card">
-            <h2 class="achievementsh2">DoD Center Cybercrime - Researcher of the Month (August 2025)</h2>
+            <h2 class="achievementsh2">DoD Cybercrime Center - Researcher of the Month (August 2025)</h2>
 <div class="container">
   <div class="row">
-          <p class="achievementpa">Received a Certificate of Recognition from the U.S. Department of Defense Vulnerability Disclosure Program (DIB-VDP) as Researcher of the Month (August 2025) for identifying and responsibly disclosing an IDOR vulnerability in an account update endpoint. The issue allowed an attacker who knew a victim’s email to update account details without proper authorization.
+          <p class="achievementpa">Received a Certificate of Recognition from the U.S. Department of Defense Vulnerability Disclosure Program (DIB-VDP) as Researcher of the Month (August 2025) for identifying and responsibly disclosing an Insecure Direct Object Reference (IDOR) vulnerability in an account update endpoint.
+
+The flaw allowed an attacker with knowledge of a victim’s email address to modify account details without proper authorization checks.
 </p>
   </div>
   <div class="row">
-    <img src="/hackerFolio/images/dc3recon.png" alt="dibvdp" class="img-recon">
+    <img src="/images/dc3recon.png" alt="dibvdp" class="img-recon">
   </div>
 </div>
 <p class="achievementpa">
@@ -202,6 +204,59 @@
 </p>
       </div>
 
+      <h1 class="section-title">Projects - Write-Ups</h1>
+      
+      <div class="writeupsCardsContainer">
+
+
+          <div class="skill-card" id="writeUpCard">
+          <h2 class="achievementsh2">IDOR in Account Update Endpoint</h2>
+          <img src="writeupImages/bac.jpeg" alt="imagem" class="imgVuln">
+                    <p class="achievementpa">JWT usage does not inherently prevent IDOR vulnerabilities</p>
+
+    <div class="extensionCard">
+      <p class="paragraph1Severity"><span class="severityPar">Severity: </span>Medium</p>
+
+      <p class="achievementpa">
+  <a class="linkX" href="https://medium.com/@valentimprado0014d/idor-in-account-update-endpoint-236de7352bbc" target="_blank">Read More</a>
+</p>
+    </div>
+
+      </div>
+
+      <div class="skill-card" id="writeUpCard">
+          <h2 class="achievementsh2">Business Logic Flaw Allowing Unauthorized Trial Extension</h2>
+          <img src="writeupImages/blf.png" alt="imagem" class="imgVuln">
+                    <p class="achievementpa">Understanding business workflows is critical to identifying logic flaws</p>
+<div class="extensionCard">
+      <p class="paragraph2Severity"><span class="severityPar">Severity: </span>High</p>
+
+      <p class="achievementpa">
+  <a class="linkX" href="https://medium.com/@valentimprado0014d/business-logic-flaw-allowing-unauthorized-trial-extension-ac6788006321" target="_blank">Read More</a>
+</p>
+    </div>
+
+      </div>
+
+      <div class="skill-card" id="writeUpCard">
+          <h2 class="achievementsh2">Open Redirect in Password Reset Flow</h2>
+          <img src="writeupImages/openredirect.jpeg" alt="imagem" class="imgVuln">
+                    <p class="achievementpa">Improper validation of redirect parameters in sensitive flows</p>
+
+<div class="extensionCard">
+      <p class="paragraph3Severity"><span class="severityPar">Severity: </span>Low</p>
+
+      <p class="achievementpa">
+  <a class="linkX" href="https://www.notion.so/232909dcf9c680f19d4cc9d37c2e4481?v=232909dcf9c68021b725000c936a4339&source=copy_link" target="_blank">Read More</a>
+</p>
+    </div>
+
+      </div>
+
+
+
+      </div>
+
 
     </div>
 
@@ -213,8 +268,8 @@
     <section id="contact" class="section contact">
       <h1 class="section-title">CONTACTS</h1>
       <div class="contact-grid">
-        <a class="contact-item" onclick="alert('pradovalentim2@gmail.com')" href="mailto:pradovalentim2@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
-        <a class="contact-item" href="#" onclick="alert('+244 947 374 452')" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        <a class="contact-item" onclick="alert('pradovalentim2@gmail.com') " href="mailto:pradovalentim2@gmail.com" target="_blank" rel="noopener"> <i class="fa-solid fa-envelope"></i></a>
+        <a class="contact-item" href="https://wa.me/351912345678?text=Hello%20Valentim,%20I%20came%20across%20your%20security%20portfolio." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
         <a class="contact-item" href="https://github.com/v7l3nt1m" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
         <a class="contact-item" href="https://www.linkedin.com/in/valentim-prado-25ab6124b" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
         <a class="contact-item" href="https://hackerone.com/v7l3nt1m?type=user" target="_blank" rel="noopener"><i class="fa-solid fa-h"></i> <i class="fa-solid fa-1"></i></a>

@@ -396,3 +396,71 @@ body.app-ready .boot-screen {
 {
   width: 100%;
 }
+
+.writeupsCardsContainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#writeUpCard
+{
+  width: 350px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.imgVuln
+{
+  width: 320px;
+}
+
+.severityPar
+{
+  font-weight: bold;
+  color: var(--fg);
+}
+
+.paragraph1Severity
+{
+  color: yellow;
+}
+
+.paragraph2Severity
+{
+  color: red;
+}
+
+.paragraph3Severity
+{
+  color: cyan;
+}
+
+/* estado base (desktop + mobile) */
+.extensionCard {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.25s ease, max-height 0.25s ease, transform 0.25s ease;
+  transform: translateY(10px);
+}
+
+/* hover em desktop/laptop */
+@media (hover: hover) and (pointer: fine) {
+  .skill-card:hover .extensionCard {
+    opacity: 1;
+    max-height: 500px; /* ajustar conforme altura máxima do conteúdo */
+    transform: translateY(0);
+  }
+}
+
+/* mobile / touch: sempre visível */
+@media (hover: none) and (pointer: coarse), (max-width: 1024px) {
+  .extensionCard {
+    opacity: 1;
+    max-height: 1000px; /* altura grande suficiente para o conteúdo */
+    transform: translateY(0);
+  }
+}
