@@ -464,3 +464,14 @@ body.app-ready .boot-screen {
     transform: translateY(0);
   }
 }
+
+/*Displays none*/
+.langPt
+{
+  display: none;
+}
+
+#langPtg
+{
+  display: none;
+}
