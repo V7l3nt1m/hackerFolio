@@ -55,3 +55,49 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   });
 });
 // ...existing code ...
+
+
+// script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btnEn = document.querySelector("a.buttonEn");
+  const btnPt = document.querySelector("a.buttonPt");
+
+  const enElements = document.querySelectorAll(".langEn");
+  const ptElements = document.querySelectorAll(".langPt");
+
+  const enElementsID = document.querySelectorAll("#langEng");
+  const ptElementsID = document.querySelectorAll("#langPtg");
+
+  // Função para mostrar inglês
+  const showEnglish = () => {
+    enElements.forEach(el => el.style.display = "inline");
+    ptElements.forEach(el => el.style.display = "none");
+
+    enElementsID.forEach(el => el.style.display = "block");
+    ptElementsID.forEach(el => el.style.display = "none");
+  };
+
+  // Função para mostrar português
+  const showPortuguese = () => {
+    ptElements.forEach(el => el.style.display = "inline");
+    enElements.forEach(el => el.style.display = "none");
+
+    ptElementsID.forEach(el => el.style.display = "block");
+    enElementsID.forEach(el => el.style.display = "none");
+  };
+
+  // Eventos de clique
+  btnEn.addEventListener("click", (e) => {
+    e.preventDefault();
+    showEnglish();
+  });
+
+  btnPt.addEventListener("click", (e) => {
+    e.preventDefault();
+    showPortuguese();
+  });
+
+  // Exibir inglês por padrão
+  showEnglish();
+});
