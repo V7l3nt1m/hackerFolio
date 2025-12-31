@@ -1,294 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- ...existing content... -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hacker Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Font Awesome (CDN) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- ...existing content... -->
-</head>
-<body>
-  <!-- Background matrix canvas -->
-  <div id="boot" class="boot-screen" aria-live="polite"><pre id="bootLog"></pre></div>
 
-  <header class="nav">
-    <div class="brand">v7l3nt1m@you:~#</div>
-    <nav>
-      <a href="#about">ABOUT</a>
-      <a href="#skills">SKILLS</a>
-      <a href="#companies">COMPANIES</a>
-      <a href="#vulns">STATISTICS</a>
-      <a href="#achievements">ACHIEVEMENTS</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACTS</a>
-    </nav>
-  </header>
+	<head>
+		<!-- ...existing content... -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Valentim Prado | Pentester & Security Researcher</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Font Awesome (CDN) -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<meta name="description" content="Pentester and Security Researcher specialized in Web Applications, APIs, and Bug Bounty. Responsible disclosures to PepsiCo, Automattic, DoD and more." />
+		<meta name="author" content="Valentim Prado" />
+		<meta name="robots" content="index, follow" />
+		<!-- ...existing content... -->
+		<!-- Open Graph / LinkedIn -->
+		<meta property="og:title" content="Valentim Prado | Pentester & Security Researcher" />
+		<meta property="og:description" content="Bug Bounty Hunter and Pentester focused on real-world vulnerabilities and responsible disclosure." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://v7l3nt1m.github.io/hackerFolio/" />
+	</head>
 
-  <main>
+	<body>
+		<!-- Background matrix canvas -->
+		<div id="boot" class="boot-screen" aria-live="polite">
+			<pre id="bootLog"></pre>
+		</div>
+		<header class="nav" role="banner">
+			<div class="brand">v7l3nt1m@you:~#</div>
+			<nav aria-label="Main navigation / Navegação principal">
+				<!-- Botões de idioma -->
+				<a href="#" class="buttonEn" aria-label="Switch language to English">EN</a>
+				<a aria-hidden="true">|</a>
+				<a href="#" class="buttonPt" aria-label="Mudar idioma para Português">PT</a>
+				<!-- Menu em inglês -->
+				<span class="langEn">
+					<a href="#about">ABOUT</a>
+					<a href="#skills">SKILLS</a>
+					<a href="#companies">COMPANIES</a>
+					<a href="#vulns">STATISTICS</a>
+					<a href="#achievements">ACHIEVEMENTS</a>
+					<a href="#projects">PROJECTS</a>
+					<a href="#contact">CONTACTS</a>
+				</span>
+				<!-- Menu em português -->
+				<span class="langPt">
+					<a href="#about">SOBRE</a>
+					<a href="#skills">HABILIDADES</a>
+					<a href="#companies">EMPRESAS</a>
+					<a href="#vulns">ESTATÍSTICAS</a>
+					<a href="#achievements">CONQUISTAS</a>
+					<a href="#projects">PROJETOS</a>
+					<a href="#contact">CONTACTOS</a>
+				</span>
+			</nav>
+		</header>
+		<main id="main" role="main">
+			<!-- About -->
+			<section id="about" class="section about" aria-labelledby="about-title">
+				<!-- Título -->
+				<h1 id="about-title" class="section-title">
+					<span class="langEn">ABOUT ME</span>
+					<span class="langPt">SOBRE MIM</span>
+				</h1>
+				<div class="about-wrap">
+					<img class="avatar" src="images/me.jpg" alt="Portrait of Valentim Prado" loading="lazy" />
+					<div class="about-text">
+						<h2>Valentim Loth Simão Prado</h2>
+						<p class="langEn"> Pentester and Security Researcher focused on web applications, APIs, and Application Security, with hands-on experience in identifying and responsibly reporting vulnerabilities, including collaboration with the U.S. Department of Defense. </p>
+						<p class="langPt"> Pentester e Pesquisador de Segurança focado em aplicações web, APIs e segurança de aplicações, com experiência prática em identificar e reportar vulnerabilidades de forma responsável, incluindo colaboração com o Departamento de Defesa dos EUA. </p>
+					</div>
+				</div>
+			</section>
+			<!-- Skills -->
+			<section id="skills" class="section" aria-labelledby="skills-title">
+				<h1 id="langEng" class="section-title">SKILLS</h1>
+				<h1 id="langPtg" class="section-title">HABILIDADES</h1>
+				<div class="grid skills-grid">
+					<div class="skill-card">
+						<i class="fa-solid fa-globe" aria-hidden="true"></i>
+						<h3>Web Exploitation</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-shoe-prints" aria-hidden="true"></i>
+						<h3>Recon & OSINT</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-wifi" aria-hidden="true"></i>
+						<h3>Network</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-brands fa-linux" aria-hidden="true"></i>
+						<h3>Linux</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-gear" aria-hidden="true"></i>
+						<h3>API Hacking</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-brands fa-python" aria-hidden="true"></i>
+						<h3>Python</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-database" aria-hidden="true"></i>
+						<h3>SQL</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-brands fa-php" aria-hidden="true"></i>
+						<h3>PHP</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-brands fa-laravel" aria-hidden="true"></i>
+						<h3>Laravel</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-brands fa-js" aria-hidden="true"></i>
+						<h3>JS</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-terminal" aria-hidden="true"></i>
+						<h3>Bash</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-bomb" aria-hidden="true"></i>
+						<h3>Metasploit</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+						<h3>Burpsuite</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-eye" aria-hidden="true"></i>
+						<h3>Nmap</h3>
+					</div>
+					<div class="skill-card">
+						<i class="fa-brands fa-git" aria-hidden="true"></i>
+						<h3>Git</h3>
+					</div>
+				</div>
+			</section>
+			<!-- Companies -->
+			<section id="companies" class="section" aria-labelledby="companies-title">
+				<h1 id="langEng" class="section-title">SECURITY REPORTS SUBMITTED TO</h1>
+				<h1 id="langPtg" class="section-title">EMPRESAS COM RELATÓRIOS ENVIADOS</h1>
+				<div class="grid logos">
+					<img src="images/anywherelogo.png" alt="Anywhere Real State" title="Anywhere Real State" loading="lazy" />
+					<img src="images/Automattic_logo.svg.png" alt="Automattic" title="Automattic" loading="lazy" />
+					<img src="images/DIB-VDP-Badge-Modified.png" alt="DC3 - Dept of Defense Cybercrime center" title="DC3 - Dept of Defense Cybercrime center" loading="lazy" />
+					<img src="images/Pepsi-Logo.png" alt="Pepsico" title="Pepsico" loading="lazy" />
+					<img src="images/THG-Logo.png" alt="the hut group" title="The Hut Group" loading="lazy">
+					<img src="images/CBRE_Group-Logo.wine.png" alt="CBRE" title="CBRE" loading="lazy">
+				</div>
+			</section>
+			<!-- Vulnerabilities Count -->
+			<section id="vulns" class="section stats" aria-labelledby="stats-title">
+				<h1 id="langEng" class="section-title">TOTAL REPORTS SUBMITTED</h1>
+				<h1 id="langPtg" class="section-title">TOTAL DE RELATÓRIOS ENVIADOS</h1>
+				<div class="stat-card">
+					<div class="stat">
+						<span id="vulnCount" class="count" aria-live="polite">0</span>
+						<span class="langEn">findings</span>
+						<span class="langPt">descobertas</span>
+					</div>
+					<p class="langEn">Responsible Disclosure Across Multiple Programs</p>
+					<p class="langPt">Divulgação Responsável em Diversos Programas</p>
+				</div>
+			</section>
+			<!-- Achievements -->
+			<section id="achievements" class="section">
+				<h1 id="langEng" class="section-title">ACHIEVEMENTS</h1>
+				<h1 id="langPtg" class="section-title">CONQUISTAS</h1>
+				<div class="grid skills-grid">
+					<div class="skill-card">
+						<h2 id="langEng" class="achievementsh2">DoD Cybercrime Center - Researcher of the Month (August 2025)</h2>
+						<h2 id="langPtg" class="achievementsh2">Centro de Crimes Cibernéticos do Departamento de Defesa dos Estados Unidos - Pesquisador do Mês (Agosto 2025) </h2>
+						<div class="container">
+							<div class="row">
+								<p id="langEng" class="achievementpa">Received a Certificate of Recognition from the U.S. Department of Defense Vulnerability Disclosure Program (DIB-VDP) as Researcher of the Month (August 2025) for identifying and responsibly disclosing an Insecure Direct Object Reference (IDOR) vulnerability in an account update endpoint. The flaw allowed an attacker with knowledge of a victim’s email address to modify account details without proper authorization checks. </p>
+                <p id="langPtg" class="achievementpa">Recebeu um Certificado de Reconhecimento do Programa de Divulgação de Vulnerabilidades do Departamento de Defesa dos EUA (DIB-VDP) como Pesquisador do Mês (Agosto 2025) por identificar e divulgar de forma responsável uma vulnerabilidade de Referência Insegura a Objetos Diretos (IDOR) em um endpoint de atualização de conta.
 
-    <!-- About -->
-    <section id="about" class="section about">
-      <h1 class="section-title">ABOUT ME</h1>
-      <div class="about-wrap">
-        <img class="avatar" src="images/me.jpg" alt="Profile photo" />
-        <div class="about-text">
-          <h2>Valentim Loth Simão Prado</h2>
-          <p>Pentester and Security Researcher focused on web applications, APIs, and Application Security, with hands-on experience in identifying and responsibly reporting vulnerabilities, including collaboration with the U.S. Department of Defense.</p>
-        </div>
-      </div>
-    </section>
+    A falha permitia que um atacante com conhecimento do endereço de e-mail de uma vítima modificasse detalhes da conta sem as devidas verificações de autorização.</p>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-      <h1 class="section-title">SKILLS</h1>
-      <div class="grid skills-grid">
-        <div class="skill-card">
-        <i class="fa-solid fa-globe"></i>
-          <h3>Web Exploitation</h3>
-          </div>
-        <div class="skill-card">
-<i class="fa-solid fa-shoe-prints"></i>
-          <h3>Recon & OSINT</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-solid fa-wifi"></i>
-          <h3>Network</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-brands fa-linux"></i>
-          <h3>Linux</h3>
-        </div>
-        <div class="skill-card">
-<i class="fa-solid fa-gear"></i>
-          <h3>API Hacking</h3>
-        </div>
-        <div class="skill-card">
-          <i class="fa-brands fa-python"></i>
-          <h3>Python</h3>
-        </div>
-        <div class="skill-card">
-          <i class="fa-solid fa-database"></i>
-           <h3>SQL</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-brands fa-php"></i>
-          <h3>PHP</h3>
-        </div>
-         <div class="skill-card">
-        <i class="fa-brands fa-laravel"></i>
-          <h3>Laravel</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-brands fa-js"></i>
-          <h3>JS</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-solid fa-terminal"></i>
-          <h3>Bash</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-solid fa-bomb"></i>
-          <h3>Metasploit</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-solid fa-shield-halved"></i>
-          <h3>Burpsuite</h3>
-        </div>
-         <div class="skill-card">
-        <i class="fa-solid fa-eye"></i>
-          <h3>Nmap</h3>
-        </div>
-        <div class="skill-card">
-        <i class="fa-brands fa-git"></i>
-          <h3>Git</h3>
-        </div>
-      </div>
-    </section>
+              </div>
+							<div class="row">
+								<img src="/images/dc3recon.png" alt="dibvdp" class="img-recon">
+							</div>
+						</div>
+						<p class="achievementpa">
+							<a class="linkX" href="https://x.com/DC3VDP/status/1968022737299046845" target="_blank">DC3 X Post</a>
+						</p>
+					</div>
+				</div>
+			</section>
+			<section id="projects" class="section">
+				<h1 id="langEng" class="section-title">PROJECTS</h1>
+        <h1 id="langPtg" class="section-title">PROJECTOS</h1>
+				<div class="grid skills-grids projectGrid">
+					<div class="skill-card" id="langEng">
+						<h2 class="achievementsh2">VPScanner - Automated Recon Script</h2>
+						<p class="achievementpa">VPScanner is a fully automated reconnaissance script designed for bug bounty hunters and penetration testers. It performs:
+						<ul class="listaProject">
+							<li>Subdomain enumeration (subfinder, sublist3r, assetfinder, findomain, amass and crt.sh)</li>
+							<li>Alive subdomain detection (httpx)</li>
+							<li>Screenshots of alive subdomains (gowitness)</li>
+							<li>Wayback URL collection &amp; filtering (gau, uro)</li>
+							<li>Sensitive file/URL detection (ripgrep)</li>
+							<li>GF pattern filtering (gf)</li>
+							<li>Hakrawler fuzzing for additional URLs</li>
+							<li>Optional port scanning (naabu)</li>
+						</ul>
+						</p>
+						<p class="achievementpa">
+							<a class="linkX" href="https://github.com/V7l3nt1m/vpscanner" target="_blank">Github Project</a>
+						</p>
+					</div>
 
-    
-
-    <!-- Companies -->
-    <section id="companies" class="section">
-      <h1 class="section-title">SECURITY REPORTS SUBMITTED TO</h1>
-      <div class="grid logos">
-        <img src="images/anywherelogo.png" alt="Anywhere Real State" title="Anywhere Real State"/>
-        <img src="images/Automattic_logo.svg.png" alt="Automattic" title="Automattic" />
-        <img src="images/DIB-VDP-Badge-Modified.png" alt="DC3 - Dept of Defense Cybercrime center" title="DC3 - Dept of Defense Cybercrime center" />
-        <img src="images/Pepsi-Logo.png" alt="Pepsico" title="Pepsico"/>
-        <img src="images/THG-Logo.png" alt="the hut group" title="The Hut Group">
-        <img src="images/CBRE_Group-Logo.wine.png" alt="CBRE" title="CBRE">
-      </div>
-    </section>
-
-    <!-- Vulnerabilities Count -->
-    <section id="vulns" class="section stats">
-      <h1 class="section-title">TOTAL REPORTS SUBMITTED</h1>
-      <div class="stat-card">
-        <div class="stat">
-          <span id="vulnCount" class="count">0</span>
-          <span class="unit">findings</span>
-        </div>
-        <p class="note">Responsible Disclosure Across Multiple programs</p>
-      </div>
-    </section>
-
-    <!-- Achievements -->
-    <section id="achievements" class="section">
-      <h1 class="section-title">ACHIEVEMENTS</h1>
-            <div class="grid skills-grid">
-      <div class="skill-card">
-            <h2 class="achievementsh2">DoD Cybercrime Center - Researcher of the Month (August 2025)</h2>
-<div class="container">
-  <div class="row">
-          <p class="achievementpa">Received a Certificate of Recognition from the U.S. Department of Defense Vulnerability Disclosure Program (DIB-VDP) as Researcher of the Month (August 2025) for identifying and responsibly disclosing an Insecure Direct Object Reference (IDOR) vulnerability in an account update endpoint.
-
-The flaw allowed an attacker with knowledge of a victim’s email address to modify account details without proper authorization checks.
-</p>
-  </div>
-  <div class="row">
-    <img src="images/dc3recon.png" alt="dibvdp" class="img-recon">
-  </div>
+          <div class="skill-card" id="langPtg">
+  <h2 class="achievementsh2">VPScanner – Script Automatizado de Reconhecimento</h2>
+  <p class="achievementpa">
+    O VPScanner é um script de reconhecimento totalmente automatizado, desenvolvido para bug bounty hunters e pentesters. Ele executa:
+  </p>
+  <ul class="listaProject">
+    <li>Enumeração de subdomínios (subfinder, sublist3r, assetfinder, findomain, amass e crt.sh)</li>
+    <li>Detecção de subdomínios ativos (httpx)</li>
+    <li>Captura de screenshots de subdomínios ativos (gowitness)</li>
+    <li>Coleta e filtragem de URLs do Wayback (gau, uro)</li>
+    <li>Detecção de arquivos/URLs sensíveis (ripgrep)</li>
+    <li>Filtragem por padrões GF (gf)</li>
+    <li>Fuzzing com Hakrawler para descoberta de URLs adicionais</li>
+    <li>Varredura de portas opcional (naabu + nmap)</li>
+  </ul>
+  <p class="achievementpa">
+    <a class="linkX" href="https://github.com/V7l3nt1m/vpscanner" target="_blank">Projeto no GitHub</a>
+  </p>
 </div>
-<p class="achievementpa">
-  <a class="linkX" href="https://x.com/DC3VDP/status/1968022737299046845" target="_blank">DC3 X Post</a>
-</p>
-      </div>
-    </div>
-    </section>
 
+					<div class="skill-card" id="langEng">
+						<h2 class="achievementsh2">BugHunting Framework - Notion</h2>
+						<p class="achievementpa">Notion workspace compiles hours of practical security research and bug hunting experience — an operational playbook with detailed checklists, payloads, and proof-of-concepts. It includes: </p>
+						<ul class="listaProject">
+							<li>Checklists by vulnerability type and testing flows (XSS, IDOR, CSRF, SSRF, authentication flaws, race conditions)</li>
+							<li>Collections of tools and commands (Burp Suite, Turbo Intruder, nmap, amass, httpx, etc.)</li>
+							<li>Payloads and reusable templates, organized by vector</li>
+							<li>Reconnaissance and enumeration workflows (subdomains, crawling, fuzzing, screenshots)</li>
+							<li>Curated links to labs, reports, and learning resources</li>
+							<li>Report templates and best practices for responsible disclosure</li>
+						</ul>
+						<p class="achievementpa">
+							<a class="linkX" href="https://www.notion.so/232909dcf9c680f19d4cc9d37c2e4481?v=232909dcf9c68021b725000c936a4339&source=copy_link" target="_blank">Notion Framework</a>
+						</p>
+					</div>
 
-     <section id="projects" class="section">
-      <h1 class="section-title">PROJECTS</h1>
-      <div class="grid skills-grids projectGrid">
-         <div class="skill-card">
-          <h2 class="achievementsh2">VPScanner - Automated Recon Script</h2>
-          <p class="achievementpa">VPScanner is a fully automated reconnaissance script designed for bug bounty hunters and penetration testers. It performs:
-
-<ul class="listaProject">
-  <li>Subdomain enumeration (subfinder, sublist3r, assetfinder, findomain, amass and crt.sh)</li>
-  <li>Alive subdomain detection (httpx)</li>
-  <li>Screenshots of alive subdomains (gowitness)</li>
-  <li>Wayback URL collection &amp; filtering (gau, uro)</li>
-  <li>Sensitive file/URL detection (ripgrep)</li>
-  <li>GF pattern filtering (gf)</li>
-  <li>Hakrawler fuzzing for additional URLs</li>
-  <li>Optional port scanning (naabu + nmap)</li>
-</ul>
-
-</p>
-<p class="achievementpa">
-  <a class="linkX" href="https://github.com/V7l3nt1m/vpscanner" target="_blank">Github Project</a>
-</p>
-
+          <div class="skill-card" id="langPtg">
+  <h2 class="achievementsh2">Framework de Bug Hunting – Notion</h2>
+  <p class="achievementpa">
+    O workspace do Notion compila horas de pesquisa prática em segurança e experiência em bug hunting — um manual operacional com checklists detalhados, payloads e proof-of-concepts. Inclui:
+  </p>
+  <ul class="listaProject">
+    <li>Checklists por tipo de vulnerabilidade e fluxos de teste (XSS, IDOR, CSRF, SSRF, falhas de autenticação, race conditions)</li>
+    <li>Coleções de ferramentas e comandos (Burp Suite, Turbo Intruder, nmap, amass, httpx, etc.)</li>
+    <li>Payloads e templates reutilizáveis, organizados por vetor</li>
+    <li>Fluxos de reconhecimento e enumeração (subdomínios, crawling, fuzzing, screenshots)</li>
+    <li>Links selecionados para labs, reports e recursos de aprendizado</li>
+    <li>Templates de relatório e melhores práticas para Responsible Disclosure</li>
+  </ul>
+  <p class="achievementpa">
+    <a class="linkX" href="https://www.notion.so/232909dcf9c680f19d4cc9d37c2e4481?v=232909dcf9c68021b725000c936a4339&source=copy_link" target="_blank">Framework no Notion</a>
+  </p>
 </div>
-  
-      <div class="skill-card">
-          <h2 class="achievementsh2">BugHunting Framework - Notion</h2>
-          <p class="achievementpa">Notion workspace compiles hours of practical security research and bug hunting experience — an operational playbook with detailed checklists, payloads, and proof-of-concepts. It includes:
-</p>
-<ul class="listaProject">
-  <li>Checklists by vulnerability type and testing flows (XSS, IDOR, CSRF, SSRF, authentication flaws, race conditions)</li>
-  <li>Collections of tools and commands (Burp Suite, Turbo Intruder, nmap, amass, httpx, etc.)</li>
-  <li>Payloads and reusable templates, organized by vector</li>
-  <li>Reconnaissance and enumeration workflows (subdomains, crawling, fuzzing, screenshots)</li>
-  <li>Curated links to labs, reports, and learning resources</li>
-  <li>Report templates and best practices for responsible disclosure</li>
-</ul>
-<p class="achievementpa">
-  <a class="linkX" href="https://www.notion.so/232909dcf9c680f19d4cc9d37c2e4481?v=232909dcf9c68021b725000c936a4339&source=copy_link" target="_blank">Notion Framework</a>
-</p>
-      </div>
 
-      <h1 class="section-title">Projects - Write-Ups</h1>
-      
-      <div class="writeupsCardsContainer">
+					<h1 id="langEng" class="section-title">Projects - Write-Ups</h1>
+          <h1 id="langPtg" class="section-title">Projetos – Relatórios</h1>
+					<div class="writeupsCardsContainer">
+						<div class="skill-card" id="writeUpCard">
+							<h2 id="langEng" class="achievementsh2">IDOR in Account Update Endpoint</h2>
+              <h2 id="langPtg"  class="achievementsh2">IDOR em Endpoint de Atualização de Conta</h2>
+							<img src="writeupImages/bac.jpeg" alt="imagem" class="imgVuln">
+							<p id="langEng" class="achievementpa">JWT usage does not inherently prevent IDOR vulnerabilities</p>
+                <p id="langPtg" class="achievementpa">O uso de JWT não previne inerentemente vulnerabilidades de IDOR</p>
+							<div class="extensionCard">
+								<p id="langEng" class="paragraph1Severity"><span class="severityPar">Severity: </span>Medium</p>
+                <p id="langPtg" class="paragraph1Severity"><span class="severityPar">Severidade: </span>Média</p>
+								<p class="achievementpa">
+									<a id="langEng" class="linkX" href="https://medium.com/@valentimprado0014d/idor-in-account-update-endpoint-236de7352bbc" target="_blank">Read More</a>
+                  <a id="langPtg" class="linkX" href="https://medium.com/@valentimprado0014d/idor-in-account-update-endpoint-236de7352bbc" target="_blank">Leia Mais</a>
+								</p>
+							</div>
+						</div>
+            
+						<div class="skill-card" id="writeUpCard">
+							<h2 id="langEng" class="achievementsh2">Business Logic Flaw Allowing Unauthorized Trial Extension</h2>
+              <h2 id="langPtg" class="achievementsh2">Falha de Lógica de Negócio Permitindo Extensão de Trial Não Autorizada</h2>
+							<img src="writeupImages/blf.png" alt="imagem" class="imgVuln">
+							<p id="langEng" class="achievementpa">Understanding business workflows is critical to identifying logic flaws</p>
+                <p id="langPtg" class="achievementpa">Entender fluxos de negócio é crítico para identificar falhas de lógica</p>
+							<div class="extensionCard">
+								<p id="langEng" class="paragraph2Severity"><span class="severityPar">Severity: </span>High</p>
+                <p id="langPtg" class="paragraph2Severity"><span class="severityPar">Severidade: </span>Alta</p>
+								<p class="achievementpa">
+									<a id="langEng" class="linkX" href="https://medium.com/@valentimprado0014d/business-logic-flaw-allowing-unauthorized-trial-extension-ac6788006321" target="_blank">Read More</a>
+                  <a id="langPtg" class="linkX" href="https://medium.com/@valentimprado0014d/business-logic-flaw-allowing-unauthorized-trial-extension-ac6788006321" target="_blank">Leia Mais</a>
+								</p>
+							</div>
+						</div>
+						<div class="skill-card" id="writeUpCard">
+							<h2 id="langEng" class="achievementsh2">Open Redirect in Password Reset Flow</h2>
+                <h2 id="langPtg" class="achievementsh2">Open Redirect no Fluxo de Redefinição de Senha</h2>
+							<img src="writeupImages/openredirect.jpeg" alt="imagem" class="imgVuln">
+							<p id="langEng" class="achievementpa">Improper validation of redirect parameters in sensitive flows</p>
+                <p id="langPtg" class="achievementpa">Validação inadequada de parâmetros de redirecionamento em fluxos sensíveis</p>
+							<div class="extensionCard">
+								<p id="langEng" class="paragraph3Severity"><span class="severityPar">Severity: </span>Low</p>
+                    <p id="langPtg" class="paragraph3Severity"><span class="severityPar">Severidade: </span>Baixa</p>
+								<p class="achievementpa">
+									<a id="langEng" class="linkX" href="https://medium.com/@valentimprado0014d/open-redirect-in-password-reset-flow-ff5af4a55a6b" target="_blank">Read More</a>
+                  <a id="langPtg" class="linkX" href="https://medium.com/@valentimprado0014d/open-redirect-in-password-reset-flow-ff5af4a55a6b" target="_blank">Leia Mais</a>
+								</p>
+							</div>
+						</div>
+					</div>
 
-
-          <div class="skill-card" id="writeUpCard">
-          <h2 class="achievementsh2">IDOR in Account Update Endpoint</h2>
-          <img src="writeupImages/bac.jpeg" alt="imagem" class="imgVuln">
-                    <p class="achievementpa">JWT usage does not inherently prevent IDOR vulnerabilities</p>
-
-    <div class="extensionCard">
-      <p class="paragraph1Severity"><span class="severityPar">Severity: </span>Medium</p>
-
-      <p class="achievementpa">
-  <a class="linkX" href="https://medium.com/@valentimprado0014d/idor-in-account-update-endpoint-236de7352bbc" target="_blank">Read More</a>
-</p>
-    </div>
-
-      </div>
-
-      <div class="skill-card" id="writeUpCard">
-          <h2 class="achievementsh2">Business Logic Flaw Allowing Unauthorized Trial Extension</h2>
-          <img src="writeupImages/blf.png" alt="imagem" class="imgVuln">
-                    <p class="achievementpa">Understanding business workflows is critical to identifying logic flaws</p>
-<div class="extensionCard">
-      <p class="paragraph2Severity"><span class="severityPar">Severity: </span>High</p>
-
-      <p class="achievementpa">
-  <a class="linkX" href="https://medium.com/@valentimprado0014d/business-logic-flaw-allowing-unauthorized-trial-extension-ac6788006321" target="_blank">Read More</a>
-</p>
-    </div>
-
-      </div>
-
-      <div class="skill-card" id="writeUpCard">
-          <h2 class="achievementsh2">Open Redirect in Password Reset Flow</h2>
-          <img src="writeupImages/openredirect.jpeg" alt="imagem" class="imgVuln">
-                    <p class="achievementpa">Improper validation of redirect parameters in sensitive flows</p>
-
-<div class="extensionCard">
-      <p class="paragraph3Severity"><span class="severityPar">Severity: </span>Low</p>
-
-      <p class="achievementpa">
-  <a class="linkX" href="https://medium.com/@valentimprado0014d/open-redirect-in-password-reset-flow-ff5af4a55a6b" target="_blank">Read More</a>
-</p>
-    </div>
-
-      </div>
-
-
-
-      </div>
-
-
-    </div>
-
-    </section>
-
-  
-
-    <!-- Contact -->
-    <section id="contact" class="section contact">
-      <h1 class="section-title">CONTACTS</h1>
-      <div class="contact-grid">
-        <a class="contact-item" onclick="alert('pradovalentim2@gmail.com') " href="mailto:pradovalentim2@gmail.com" target="_blank" rel="noopener"> <i class="fa-solid fa-envelope"></i></a>
-        <a class="contact-item" href="https://wa.me/351912345678?text=Hello%20Valentim,%20I%20came%20across%20your%20security%20portfolio." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="contact-item" href="https://github.com/v7l3nt1m" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
-        <a class="contact-item" href="https://www.linkedin.com/in/valentim-prado-25ab6124b" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-        <a class="contact-item" href="https://hackerone.com/v7l3nt1m?type=user" target="_blank" rel="noopener"><i class="fa-solid fa-h"></i> <i class="fa-solid fa-1"></i></a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <span>© <span id="year"></span> © 2025 Valentim Prado. All rights reserved.</span>
-  </footer>
-
-  <script type="importmap">
-  {
+          
+				</div>
+			</section>
+			<!-- Contact -->
+			<section id="contact" class="section contact" aria-labelledby="contact-title">
+				<h1 id="langEng" class="section-title">CONTACTS</h1>
+        <h1 id="langPtg" class="section-title">CONTACTOS</h1>
+				<div class="contact-grid">
+					<a class="contact-item" aria-label="Send email" onclick="alert('pradovalentim2@gmail.com') " href="mailto:pradovalentim2@gmail.com" target="_blank" rel="noopener"> <i class="fa-solid fa-envelope"></i></a>
+					<a class="contact-item" href="https://wa.me/351912345678?text=Hello%20Valentim,%20I%20came%20across%20your%20security%20portfolio." aria-label="Whatsapp number" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+					<a class="contact-item" aria-label="GitHub profile" href="https://github.com/v7l3nt1m" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+					<a class="contact-item" href="https://www.linkedin.com/in/valentim-prado-25ab6124b" aria-label="LinkedIn profile" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a class="contact-item" href="https://hackerone.com/v7l3nt1m?type=user" aria-label="hackerone profile" target="_blank" rel="noopener"><i class="fa-solid fa-h"></i> <i class="fa-solid fa-1"></i></a>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<span id="langEng">© <span id="year"></span> Valentim Prado. All rights reserved.</span>
+      <span id="langPtg">© <span id="year"></span> Valentim Prado. Todos os Direitos Reservados.</span>
+		</footer>
+		<script type="importmap"> {
     "imports": {
       "countup": "https://esm.sh/countup.js@2.8.0"
     }
   }
   </script>
-  <script type="module" src="script.js"></script>
-  <!-- ...existing content... -->
-</body>
+		<script type="module" src="script.js"></script>
+		<!-- ...existing content... -->
+	</body>
+
 </html>
